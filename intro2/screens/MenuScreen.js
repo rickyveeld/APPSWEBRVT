@@ -9,6 +9,7 @@ import ModalScreens from './ModalScreens'
 import BottomSheetScreens from './BottomSheetScreens'
 import TextScreens from './TextScreens'
 import Repaso1Screen from './Repaso1Screen'
+import ActivityScreen from './ActivityyScreen'
 export default function MenuScreen () {
     const[screen,setScreen]=useState('menu');
     switch(screen){
@@ -30,6 +31,8 @@ export default function MenuScreen () {
                 return <TextScreens/>
             case 'Repaso1Screen':
                 return <Repaso1Screen/>
+            case 'ActivityScreen':
+                return <ActivityScreen/>
         case 'menu':
             default:
                  return (
@@ -44,6 +47,7 @@ export default function MenuScreen () {
         <Button onPress={()=>setScreen('BottomSheetScreens')} title='Practica BottomSheetScreens'/> 
         <Button onPress={()=>setScreen('TextScreens')} title='Practica Alert'/> 
         <Button onPress={()=>setScreen('Repaso1Screen')} title='Repaso1Screen'/> 
+        <Button onPress={()=>setScreen('ActivityScreen')} title='ActivityScreen'/>    
       </View>
     )
 
