@@ -82,7 +82,7 @@ export default function ScrollScreens () {
            <View style={styles.Elementos2}>
             <Text style={styles.text}>Elemento 10</Text>
            </View>
-           <View style={styles.Elementos2}>
+           <View >
             <Text style={styles.text}>Elemento 11</Text>
            </View>
            <View style={styles.Elementos2}>
